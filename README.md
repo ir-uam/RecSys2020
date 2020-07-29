@@ -1,4 +1,4 @@
-UAM IR team at Rec Sys2020
+UAM IR team at RecSys 2020
 --------------------------
 
 Software for the experiments reported in the RecSys paper:
