@@ -36,11 +36,11 @@ System Requirements
 
 ## Installation
 
-  Download all the files and unzip them into any root folder.
+Download all the files and unzip them into any root folder.
 
-  From the root folder run the command: 
+From the root folder run the command: 
   
-    mvn compile assembly::single
+  	mvn compile assembly::single
 
 ## Execution
 
