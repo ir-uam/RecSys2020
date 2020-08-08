@@ -45,14 +45,14 @@ System Requirements
 ## Execution
 
 In order to reproduce the results displayed in the figures of the paper, the datasets should be placed in the following locations:
-	- [MovieLens 1M](http://files.grouplens.org/datasets/movielens/ml-1m.zip). Uncompress the dataset file and place `ratings.dat` in path `datasets/ml1m/`. 
-  	- [Yahoo R3!](https://webscope.sandbox.yahoo.com/catalog.php?datatype=r). Uncompress the dataset file and place `ydata-ymusic-rating-study-v1_0-train.txt` and `ydata-ymusic-rating-study-v1_0-test.txt` in path `datasets/yahoo/`.
+      - [MovieLens 1M](http://files.grouplens.org/datasets/movielens/ml-1m.zip). Uncompress the dataset file and place `ratings.dat` in path `datasets/ml1m/`. 
+      - [Yahoo R3!](https://webscope.sandbox.yahoo.com/catalog.php?datatype=r). Uncompress the dataset file and place `ydata-ymusic-rating-study-v1_0-train.txt` and `ydata-ymusic-rating-study-v1_0-test.txt` in path `datasets/yahoo/`.
 
 Before producing any of the figures of the paper, first run the command:
 
   	java -cp .\target\TargetSampling-0.1-jar-with-dependencies.jar es.uam.ir.targetsampling.Initialize
 	
-This program generates the folders and files described in [Output files generated upon initialization](output-files-generated-upon-initialization). 
+This program generates the folders and files described in [Output files generated upon initialization](#output-files-generated-upon-initialization). 
 
 Once the previous command has finished, the results for the figures are generated with the following command:
 
