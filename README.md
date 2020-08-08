@@ -40,12 +40,12 @@ System Requirements
 Installation
 ------------
 
-Download all the files and unzip them into any root folder.
-  
-From the root folder run the command: 
+  Download all the files and unzip them into any root folder.
+
+  From the root folder run the command: 
   
     mvn compile assembly::single
-  
+
 #Execution
 ----------
 
@@ -54,7 +54,7 @@ From the root folder run the command:
   	- [Yahoo R3!](https://webscope.sandbox.yahoo.com/catalog.php?datatype=r). Uncompress the dataset file and place `ydata-ymusic-rating-study-v1_0-train.txt` and `ydata-ymusic-rating-study-v1_0-test.txt` in path `datasets/yahoo/`.
 
   Before producing any of the figures of the paper, first run the command:
-  
+
   	java -cp .\target\TargetSampling-0.1-jar-with-dependencies.jar es.uam.ir.targetsampling.Initialize
 	
   This program generates the folders and files described in [Output files generated upon initialization](output-files-generated-upon-initialization). 
@@ -75,10 +75,10 @@ Warning: Figure 4 requires heavy computation and may take over one week to execu
 
 Example of output file for figures
 ----------------------------------
-  
+ 
   Note that given to the random sampling involved, the exact values slightly change from one execution to another:
-  
-  
+
+
 - `figure1.txt`
 
 		====================
