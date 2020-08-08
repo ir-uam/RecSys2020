@@ -46,8 +46,7 @@ Installation
   
     mvn compile assembly::single
 
-Execution
----------
+# Execution
 
 In order to reproduce the results displayed in the figures of the paper, the datasets should be placed in the following locations:
 	- [MovieLens 1M](http://files.grouplens.org/datasets/movielens/ml-1m.zip). Uncompress the dataset file and place `ratings.dat` in path `datasets/ml1m/`. 
