@@ -13,7 +13,7 @@ Authors
 Information Retrieval Group at Universidad Autónoma de Madrid
 - [Rocío Cañamares](mailto:rcanamares@gmail.com)
 - [Pablo Castells](http://ir.ii.uam.es/castells)
-  
+
 Software description
 --------------------
 
