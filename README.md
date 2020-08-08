@@ -42,7 +42,7 @@ System Requirements
   
     mvn compile assembly::single
 
-## #Execution
+## Execution
 
 In order to reproduce the results displayed in the figures of the paper, the datasets should be placed in the following locations:
 	- [MovieLens 1M](http://files.grouplens.org/datasets/movielens/ml-1m.zip). Uncompress the dataset file and place `ratings.dat` in path `datasets/ml1m/`. 
@@ -64,7 +64,7 @@ Where `figureNumber` is the number of the figure you want to generate. For insta
 
 A file `figure1.txt` is produced in the 'results/' folder when runnning the previous command. Similarly, `figure2.txt`, `figure3.txt`, etc., are produced by passing 2, 3, etc. as argument to the above command.
 
-Note: running Figure 4 and Figure 5 generates additional auxiliary files, that you do not need to be concerned with unless you are interested in the intermediate results. See [Additional output files generated when running Figure 4](#additional-output-files-generated-when-running-figure-4) and [Additional output files generated when running Figure 5](#additional-output-files-generated-when-running-figure-5) for more details.
+Note: running Figure 4 and Figure 5 generates additional auxiliary files, that you do not need to be concerned with unless you are interested in the intermediate results. See [Additional output files generated when running Figure 4](README.md#additional-output-files-generated-when-running-figure-4) and [Additional output files generated when running Figure 5](README.md#additional-output-files-generated-when-running-figure-5) for more details.
 
 Warning: Figure 4 requires heavy computation and may take over one week to execute.
 
