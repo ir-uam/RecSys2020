@@ -46,8 +46,8 @@ Installation
   
     mvn compile assembly::single
 
-#Execution
-----------
+Execution
+---------
 
 In order to reproduce the results displayed in the figures of the paper, the datasets should be placed in the following locations:
 	- [MovieLens 1M](http://files.grouplens.org/datasets/movielens/ml-1m.zip). Uncompress the dataset file and place `ratings.dat` in path `datasets/ml1m/`. 
@@ -390,8 +390,8 @@ The software takes configuration parameters defined in the following files:
 - `conf/yahoo-unbiased.properties`: configuration for running the experiments using the unbiased ratings of the Yahoo R3 dataset. The parameters of the algorithms along with other properties are set here.
 
 
-#Output files generated upon initialization
---------------------------------------------
+Output files generated upon initialization
+------------------------------------------
 
 In case you are interested in the detail and intermediate results that are elaborated and aggregated into the figure files, we provide here a description of the corresponding files containing such detail.
 
@@ -428,8 +428,8 @@ The following files are generated in the folder results/unbiased. These files ar
 - `yahoo-expected-intersection-ratio.txt`
 
 
-#Output files generated when running Figure 4
----------------------------------------------
+Output files generated when running Figure 4
+--------------------------------------------
 
 In case you are interested in the detail and intermediate results that are elaborated and aggregated into the figure files, we provide here a description of the corresponding files containing such detail.
 
@@ -451,8 +451,8 @@ For MovieLens 1M:
 - `ml1m-allrecs-pvalues.txt`
 - `ml1m-allrecs-expected-intersection-ratio.txt`
 
-#Output files generated when running Figure 5
----------------------------------------------
+Output files generated when running Figure 5
+--------------------------------------------
 
 In case you are interested in the detail and intermediate results that are elaborated and aggregated into the figure files, we provide here a description of the corresponding files containing such detail.
 
