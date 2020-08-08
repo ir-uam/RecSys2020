@@ -1,7 +1,9 @@
 UAM IR team at RecSys 2020
 --------------------------
 
-This repository contains the code and data needed to reproduce the experiments of the paper:  > R. Cañamares and [P. Castells](http://ir.ii.uam.es/castells). [On Target Item Sampling in Offline Recommender System Evaluation](http://ir.ii.uam.es/pubs/recsys2020.pdf). 14th ACM Conference on Recommender Systems (RecSys 2020). Virtual Event, Brazil, September 2020.
+This repository contains the code and data needed to reproduce the experiments of the paper:  
+
+> R. Cañamares and [P. Castells](http://ir.ii.uam.es/castells). [On Target Item Sampling in Offline Recommender System Evaluation](http://ir.ii.uam.es/pubs/recsys2020.pdf). 14th ACM Conference on Recommender Systems (RecSys 2020). Virtual Event, Brazil, September 2020.
 
 The software produces the results displayed in the figures of the paper (1 to 5).
 
