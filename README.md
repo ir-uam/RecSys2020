@@ -1,7 +1,7 @@
 UAM IR team at RecSys 2020
 --------------------------
 
-This repository contains the code and data needed to reproduce the experiments of the paper:  
+This repository contains the code and data needed to reproduce the experiments of the paper:
 
 > R. Cañamares and [P. Castells](http://ir.ii.uam.es/castells). [On Target Item Sampling in Offline Recommender System Evaluation](http://ir.ii.uam.es/pubs/recsys2020.pdf). 14th ACM Conference on Recommender Systems (RecSys 2020). Virtual Event, Brazil, September 2020.
 
@@ -23,7 +23,7 @@ The repository contains the Java classes for reproducing the experiments reporte
 - `es.uam.ir.filler`: class for filling in the missing coverage in recommendation rankings when an algorithm is not able to rank sufficient items for the metric cutoff.
 - `es.uam.ir.targetsampling`: top-level main classes for generating the figures of the paper and sampling different target set sizes.
 - `es.uam.ir.util`: additional utility classes for the rest of the program.
-  
+
 The software uses the [RankSys](http://ranksys.org/) library, and extends some of its classes. Our extensions are located in the following packages:
 - `es.uam.ir.ranksys.metrics.basic`: extension of RankSys basic metrics to include the Coverage metric.
 - `es.uam.ir.ranksys.nn.user`: extension of RankSys implementations of kNN collaborative filtering, adding normalized user-based variants.
@@ -41,7 +41,7 @@ System Requirements
 
 Installation
 ------------
-  
+
   Download all the files and unzip them into any root folder.
   
   From the root folder run the command: 
