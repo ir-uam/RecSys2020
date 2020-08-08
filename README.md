@@ -52,7 +52,7 @@ Before producing any of the figures of the paper, first run the command:
 
   	java -cp .\target\TargetSampling-0.1-jar-with-dependencies.jar es.uam.ir.targetsampling.Initialize
 	
-This program generates the folders and files described in [Output files generated upon initialization](#output-files-generated-upon-initialization). 
+This program generates the folders and files described in section [Output files generated upon initialization](#output-files-generated-upon-initialization) below. 
 
 Once the previous command has finished, the results for the figures are generated with the following command:
 
@@ -64,7 +64,7 @@ Where `figureNumber` is the number of the figure you want to generate. For insta
 
 A file `figure1.txt` is produced in the 'results/' folder when runnning the previous command. Similarly, `figure2.txt`, `figure3.txt`, etc., are produced by passing 2, 3, etc. as argument to the above command.
 
-Note: running Figure 4 and Figure 5 generates additional auxiliary files, that you do not need to be concerned with unless you are interested in the intermediate results. See [Additional output files generated when running Figure 4](#output-files-generated-when-running-figure-4) and [Additional output files generated when running Figure 5](#output-files-generated-when-running-figure-5) for more details.
+Note: running Figure 4 and Figure 5 generates additional auxiliary files, that you do not need to be concerned with unless you are interested in the intermediate results. See sections [Additional output files generated when running Figure 4](#output-files-generated-when-running-figure-4) and [Additional output files generated when running Figure 5](#output-files-generated-when-running-figure-5) for more details.
 
 Warning: Figure 4 requires heavy computation and may take over one week to execute.
 
