@@ -49,25 +49,25 @@ Installation
 #Execution
 ----------
 
-  In order to reproduce the results displayed in the figures of the paper, the datasets should be placed in the following locations:
+In order to reproduce the results displayed in the figures of the paper, the datasets should be placed in the following locations:
 	- [MovieLens 1M](http://files.grouplens.org/datasets/movielens/ml-1m.zip). Uncompress the dataset file and place `ratings.dat` in path `datasets/ml1m/`. 
   	- [Yahoo R3!](https://webscope.sandbox.yahoo.com/catalog.php?datatype=r). Uncompress the dataset file and place `ydata-ymusic-rating-study-v1_0-train.txt` and `ydata-ymusic-rating-study-v1_0-test.txt` in path `datasets/yahoo/`.
 
-  Before producing any of the figures of the paper, first run the command:
+Before producing any of the figures of the paper, first run the command:
 
   	java -cp .\target\TargetSampling-0.1-jar-with-dependencies.jar es.uam.ir.targetsampling.Initialize
 	
-  This program generates the folders and files described in [Output files generated upon initialization](output-files-generated-upon-initialization). 
+This program generates the folders and files described in [Output files generated upon initialization](output-files-generated-upon-initialization). 
 
-  Once the previous command has finished, the results for the figures are generated with the following command:
+Once the previous command has finished, the results for the figures are generated with the following command:
 
   	java -cp .\target\TargetSampling-0.1-jar-with-dependencies.jar es.uam.ir.targetsampling.GenerateFigure figureNumber
 
-  Where `figureNumber` is the number of the figure you want to generate. For instance, the following command generates figure 1.
+Where `figureNumber` is the number of the figure you want to generate. For instance, the following command generates figure 1.
 
   	java -cp .\target\TargetSampling-0.1-jar-with-dependencies.jar es.uam.ir.targetsampling.GenerateFigure 1
 
-  A file `figure1.txt` is produced in the 'results/' folder when runnning the previous command. Similarly, `figure2.txt`, `figure3.txt`, etc., are produced by passing 2, 3, etc. as argument to the above command.
+A file `figure1.txt` is produced in the 'results/' folder when runnning the previous command. Similarly, `figure2.txt`, `figure3.txt`, etc., are produced by passing 2, 3, etc. as argument to the above command.
 
 Note: running Figure 4 and Figure 5 generates additional auxiliary files, that you do not need to be concerned with unless you are interested in the intermediate results. See [Additional output files generated when running Figure 4](#additional-output-files-generated-when-running-figure-4) and [Additional output files generated when running Figure 5](#additional-output-files-generated-when-running-figure-5) for more details.
 
@@ -76,7 +76,7 @@ Warning: Figure 4 requires heavy computation and may take over one week to execu
 Example of output file for figures
 ----------------------------------
  
-  Note that given to the random sampling involved, the exact values slightly change from one execution to another:
+Note that given to the random sampling involved, the exact values slightly change from one execution to another:
 
 
 - `figure1.txt`
@@ -136,7 +136,7 @@ Example of output file for figures
 		kNN (full/test)	0.23017855552221628	0.04199854497354497	0.6657941512861026
 
 
-- `figure3.txt`:
+- `figure3.txt`
 
 		====================
 		Dataset: ml1m
@@ -238,7 +238,7 @@ Example of output file for figures
 
 
 		
-- `figure4.txt`:
+- `figure4.txt`
 
 		====================					
 		Dataset: ml1m					
@@ -340,7 +340,7 @@ Example of output file for figures
 
 
 		
-- `figure5.txt`:
+- `figure5.txt`
 
 		====================
 		Dataset: ml1m-nofill
@@ -429,7 +429,7 @@ The following files are generated in the folder results/unbiased. These files ar
 
 
 #Output files generated when running Figure 4
------------------------------------------------
+---------------------------------------------
 
 In case you are interested in the detail and intermediate results that are elaborated and aggregated into the figure files, we provide here a description of the corresponding files containing such detail.
 
