@@ -445,7 +445,7 @@ For MovieLens 1M:
 
 In case you are interested in the detail and intermediate results that are elaborated and aggregated into the figure files, we provide here a description of the corresponding files containing such detail.
 
-Figure 5 requires running algorithms without filling in the rankings when they are short of coverage. Therefore, running the command to generate Figure 5 (see section [Execution](#execution) generates equivalent files to the [ones generated upon initialization](#output-files-generated-upon-initialization) but without randomly filling in the rankings. 
+Figure 5 requires running algorithms without filling in the rankings when they are short of coverage. Therefore, running the command to generate Figure 5 (see section [Execution](#execution)) generates equivalent files to the [ones generated upon initialization](#output-files-generated-upon-initialization) but without randomly filling in the rankings. 
 
 For Yahoo! R3:
 - `yahoo-nofill-target-sampling.txt`
