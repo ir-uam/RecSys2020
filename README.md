@@ -8,7 +8,7 @@ This repository contains the code and data needed to reproduce the experiments o
 The software produces the results displayed in the figures of the paper (1 to 5).
 
 Authors
---------------------
+-------
 
 Information Retrieval Group at Universidad Autónoma de Madrid
 - [Rocío Cañamares](mailto:rcanamares@gmail.com)
@@ -33,23 +33,21 @@ The software uses the [RankSys](http://ranksys.org/) library, and extends some o
 System Requirements
 -------------------
 
-- Java JDK:
-    1.8 or above (the software was tested using the version 1.8.0_40).
+- Java JDK: 1.8 or above (the software was tested using the version 1.8.0_40).
 
-- Maven:
-    tested with version 3.6.3.
+- Maven: tested with version 3.6.3.
 
 Installation
 ------------
 
-  Download all the files and unzip them into any root folder.
+Download all the files and unzip them into any root folder.
   
-  From the root folder run the command: 
+From the root folder run the command: 
   
     mvn compile assembly::single
   
 #Execution
----------
+----------
 
   In order to reproduce the results displayed in the figures of the paper, the datasets should be placed in the following locations:
 	- [MovieLens 1M](http://files.grouplens.org/datasets/movielens/ml-1m.zip). Uncompress the dataset file and place `ratings.dat` in path `datasets/ml1m/`. 
