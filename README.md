@@ -39,7 +39,7 @@ System Requirements
 Download all the files and unzip them into any root folder.
 
 From the root folder run the command: 
-  
+
   	mvn compile assembly::single
 
 ## Execution
