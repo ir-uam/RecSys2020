@@ -1,5 +1,4 @@
-UAM IR team at RecSys 2020
---------------------------
+# UAM IR team at RecSys 2020
 
 This repository contains the code and data needed to reproduce the experiments of the paper:
 
@@ -7,15 +6,13 @@ This repository contains the code and data needed to reproduce the experiments o
 
 The software produces the results displayed in the figures of the paper (1 to 5).
 
-Authors
--------
+## Authors
 
 Information Retrieval Group at Universidad Autónoma de Madrid
 - [Rocío Cañamares](mailto:rcanamares@gmail.com)
 - [Pablo Castells](http://ir.ii.uam.es/castells)
 
-Software description
---------------------
+## Software description
 
 The repository contains the Java classes for reproducing the experiments reported in the paper. The software is organized in the following packages:
 - `es.uam.ir.crossvalidation`: class for creating a 5-fold rating data partition for cross validation.
@@ -37,8 +34,7 @@ System Requirements
 
 - Maven: tested with version 3.6.3.
 
-Installation
-------------
+## Installation
 
   Download all the files and unzip them into any root folder.
 
@@ -46,7 +42,7 @@ Installation
   
     mvn compile assembly::single
 
-# Execution
+## Execution
 
 In order to reproduce the results displayed in the figures of the paper, the datasets should be placed in the following locations:
 	- [MovieLens 1M](http://files.grouplens.org/datasets/movielens/ml-1m.zip). Uncompress the dataset file and place `ratings.dat` in path `datasets/ml1m/`. 
@@ -72,8 +68,7 @@ Note: running Figure 4 and Figure 5 generates additional auxiliary files, that y
 
 Warning: Figure 4 requires heavy computation and may take over one week to execute.
 
-Example of output file for figures
-----------------------------------
+## Example of output file for figures
  
 Note that given to the random sampling involved, the exact values slightly change from one execution to another:
 
@@ -380,17 +375,14 @@ Note that given to the random sampling involved, the exact values slightly chang
 		1000	1.0	0.9804592592592594	1.0	1.0	1.0	1.0	1.0	1.0	
 
 
-Configuration
--------------
+## Configuration
 
 The software takes configuration parameters defined in the following files:
 - `conf/ml1m-biased.properties`: configuration for running the experiments using the ratings of the MovieLens 1M dataset. The parameters of the algorithms along with other properties are set here.
 - `conf/yahoo-biased.properties`: configuration for running the experiments using the biased ratings of the Yahoo R3 dataset. The parameters of the algorithms along with other properties are set here.
 - `conf/yahoo-unbiased.properties`: configuration for running the experiments using the unbiased ratings of the Yahoo R3 dataset. The parameters of the algorithms along with other properties are set here.
 
-
-Output files generated upon initialization
-------------------------------------------
+## Output files generated upon initialization
 
 In case you are interested in the detail and intermediate results that are elaborated and aggregated into the figure files, we provide here a description of the corresponding files containing such detail.
 
@@ -427,8 +419,7 @@ The following files are generated in the folder results/unbiased. These files ar
 - `yahoo-expected-intersection-ratio.txt`
 
 
-Output files generated when running Figure 4
---------------------------------------------
+## Output files generated when running Figure 4
 
 In case you are interested in the detail and intermediate results that are elaborated and aggregated into the figure files, we provide here a description of the corresponding files containing such detail.
 
@@ -450,8 +441,7 @@ For MovieLens 1M:
 - `ml1m-allrecs-pvalues.txt`
 - `ml1m-allrecs-expected-intersection-ratio.txt`
 
-Output files generated when running Figure 5
---------------------------------------------
+## Output files generated when running Figure 5
 
 In case you are interested in the detail and intermediate results that are elaborated and aggregated into the figure files, we provide here a description of the corresponding files containing such detail.
 
