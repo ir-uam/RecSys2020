@@ -40,7 +40,7 @@ Download all the files and unzip them into any root folder.
 
 From the root folder run the command: 
 
-  	mvn compile assembly::single
+    mvn compile assembly::single
 
 ## Execution
 
@@ -50,17 +50,17 @@ In order to reproduce the results displayed in the figures of the paper, the dat
 
 Before producing any of the figures of the paper, first run the command:
 
-  	java -cp .\target\TargetSampling-0.1-jar-with-dependencies.jar es.uam.ir.targetsampling.Initialize
+    java -cp .\target\TargetSampling-0.1-jar-with-dependencies.jar es.uam.ir.targetsampling.Initialize
 	
 This program generates the folders and files described in section [Output files generated upon initialization](#output-files-generated-upon-initialization) below. 
 
 Once the previous command has finished, the results for the figures are generated with the following command:
 
-  	java -cp .\target\TargetSampling-0.1-jar-with-dependencies.jar es.uam.ir.targetsampling.GenerateFigure figureNumber
+    java -cp .\target\TargetSampling-0.1-jar-with-dependencies.jar es.uam.ir.targetsampling.GenerateFigure figureNumber
 
 Where `figureNumber` is the number of the figure you want to generate. For instance, the following command generates figure 1.
 
-  	java -cp .\target\TargetSampling-0.1-jar-with-dependencies.jar es.uam.ir.targetsampling.GenerateFigure 1
+    java -cp .\target\TargetSampling-0.1-jar-with-dependencies.jar es.uam.ir.targetsampling.GenerateFigure 1
 
 A file `figure1.txt` is produced in the 'results/' folder when runnning the previous command. Similarly, `figure2.txt`, `figure3.txt`, etc., are produced by passing 2, 3, etc. as argument to the above command.
 
