@@ -16,7 +16,7 @@ Information Retrieval Group at Universidad Autónoma de Madrid
 
 The repository contains the Java classes for reproducing the experiments reported in the paper. The software is organized in the following packages:
 - `es.uam.ir.crossvalidation`: class for creating a 5-fold rating data partition for cross validation.
-- `es.uam.ir.datagenerator`: class for handling the data and generating the training set by mapping negative ratings to zero -- this is used by kNN algorithms in our experiments.
+- `es.uam.ir.datagenerator`: class for truncating ratings by a relevance threshold -- this is used by kNN algorithms in our experiments.
 - `es.uam.ir.filler`: class for filling in the missing coverage in recommendation rankings when an algorithm is not able to rank sufficient items for the metric cutoff.
 - `es.uam.ir.targetsampling`: top-level main classes for generating the figures of the paper and sampling different target set sizes.
 - `es.uam.ir.util`: additional utility classes for the rest of the program.
