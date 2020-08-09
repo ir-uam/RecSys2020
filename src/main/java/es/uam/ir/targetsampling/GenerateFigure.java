@@ -9,7 +9,12 @@
 package es.uam.ir.targetsampling;
 
 import es.uam.ir.filler.Filler;
+import static es.uam.ir.targetsampling.Initialize.BIASED_PATH;
+import static es.uam.ir.targetsampling.Initialize.ML1M;
 import static es.uam.ir.targetsampling.Initialize.ML1M_BIASED_PROPERTIES_FILE;
+import static es.uam.ir.targetsampling.Initialize.RESULTS_PATH;
+import static es.uam.ir.targetsampling.Initialize.UNBIASED_PATH;
+import static es.uam.ir.targetsampling.Initialize.YAHOO;
 import static es.uam.ir.targetsampling.Initialize.YAHOO_BIASED_PROPERTIES_FILE;
 import static es.uam.ir.targetsampling.TargetSampling.EXPECTED_INTERSECTION_RATIO_FILE;
 import static es.uam.ir.targetsampling.TargetSampling.TARGET_SAMPLING_FILE;
@@ -39,11 +44,7 @@ public class GenerateFigure {
     public final static int FULL_TARGET_SIZE_ML1M = 2000;
     public final static int FULL_TARGET_SIZE_YAHOO = 1000;
     public final static int N_FOLDS = 5;
-    public final static String RESULTS_PATH = "results/";
-    public final static String BIASED_PATH = "biased/";
-    public final static String UNBIASED_PATH = "unbiased/";
-    public final static String ML1M = "ml1m";
-    public final static String YAHOO = "yahoo";
+    
 
     /**
      *

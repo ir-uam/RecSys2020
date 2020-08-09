@@ -31,12 +31,16 @@ import java.util.logging.LogManager;
  * @author Pablo Castells
  */
 public class Initialize {
-
-    public final static String ML1M_PATH = "datasets/ml1m/";
+    public final static String ML1M = "ml1m";
+    public final static String YAHOO = "yahoo";
+    
+    public final static String DATASETS_PATH = "datasets/";
+    
+    public final static String ML1M_PATH = DATASETS_PATH + ML1M + "/";
     public final static String ORIGINAL_ML1M_DATASET_PATH = ML1M_PATH + "ratings.dat";
     public final static String PREPROCESSED_ML1M_DATASET_PATH = ML1M_PATH + "data.txt";
 
-    public final static String YAHOO_PATH = "datasets/yahoo/";
+    public final static String YAHOO_PATH = DATASETS_PATH + YAHOO + "/";
     public final static String ORIGINAL_YAHOO_TRAIN_DATASET_PATH = YAHOO_PATH + "ydata-ymusic-rating-study-v1_0-train.txt";
     public final static String ORIGINAL_YAHOO_TEST_DATASET_PATH = YAHOO_PATH + "ydata-ymusic-rating-study-v1_0-test.txt";
     public final static String PREPROCESSED_YAHOO_TRAIN_DATASET_PATH = YAHOO_PATH + "data.txt";
@@ -45,6 +49,11 @@ public class Initialize {
     public final static String YAHOO_BIASED_PROPERTIES_FILE = "conf/yahoo-biased.properties";
     public final static String YAHOO_UNBIASED_PROPERTIES_FILE = "conf/yahoo-unbiased.properties";
     public final static String ML1M_BIASED_PROPERTIES_FILE = "conf/movielens-biased.properties";
+    
+    public final static String RESULTS_PATH = "results/";
+    public final static String BIASED_PATH = "biased/";
+    public final static String UNBIASED_PATH = "unbiased/";
+    
 
     /**
      *
@@ -53,6 +62,21 @@ public class Initialize {
      */
     public static void main(String[] args) throws IOException {
         LogManager.getLogManager().reset();
+        
+        File directory = new File(String.valueOf(RESULTS_PATH));
+        if (!directory.exists()) {
+            directory.mkdir();
+        }
+        
+        directory = new File(String.valueOf(RESULTS_PATH + BIASED_PATH));
+        if (!directory.exists()) {
+            directory.mkdir();
+        }
+        
+        directory = new File(String.valueOf(RESULTS_PATH + UNBIASED_PATH));
+        if (!directory.exists()) {
+            directory.mkdir();
+        }
 
         Timer.start("Processing Movielens 1M...");
         processMl1m();
@@ -84,6 +108,7 @@ public class Initialize {
     }
 
     static void processMl1m() throws IOException {
+        
         RandomAccessFile ml1mIn = new RandomAccessFile(ORIGINAL_ML1M_DATASET_PATH, "r");
         byte bytes[] = new byte[(int) ml1mIn.length()];
         ml1mIn.read(bytes);
